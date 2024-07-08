@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Link Checker</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <div class="input-area">
+      <h2>Link Checker</h2>
+      <textarea id="links" rows="10" placeholder="Enter links here, one per line"></textarea>
+      <button onclick="checkLinks()">Check Links</button>
+    </div>
+    <div class="result-area">
+      <h3>Results</h3>
+      <div id="results"></div>
+      <div class="summary" id="summary"></div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
