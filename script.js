@@ -7,7 +7,7 @@ async function checkLinks() {
 
   let validos = 0;
   let invalidos = 0;
-
+  
   for (const link of links) {
     const resultDiv = document.createElement('div');
     resultDiv.classList.add('result');
