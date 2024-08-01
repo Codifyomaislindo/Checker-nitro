@@ -1,78 +1,132 @@
 body {
-  font-family: 'Roboto', sans-serif;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
-  background: linear-gradient(135deg, #6e8efb, #a777e3);
-  margin: 0;
-  color: #333;
-}
+            background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzxvgvAtPqbvt9uaEpdEiPtpcJ4wRfc4mrPA&s');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+            font-family: 'Arial', sans-serif;
+            color: #ffffff;
+        }
 
-.container {
-  background: white;
-  padding: 30px;
-  border-radius: 15px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  max-width: 600px;
-  width: 100%;
-}
+        #container {
+            background: rgba(0, 0, 0, 0.7);
+            backdrop-filter: blur(10px);
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+            width: 90%;
+            max-width: 600px;
+            margin: 50px auto;
+            text-align: center;
+        }
 
-h2 {
-  margin-bottom: 20px;
-  font-size: 24px;
-  text-align: center;
-}
+        h2 {
+            margin-top: 0;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+            font-size: 2.5em;
+        }
 
-textarea {
-  width: 100%;
-  padding: 10px;
-  border: 1px solid #ddd;
-  border-radius: 5px;
-  margin-bottom: 20px;
-  resize: vertical;
-}
+        textarea {
+            width: 100%;
+            height: 150px;
+            padding: 10px;
+            border-radius: 8px;
+            border: 1px solid #ccc;
+            resize: none;
+            margin-bottom: 10px;
+            background: rgba(255, 255, 255, 0.8);
+            font-size: 1em;
+        }
 
-button {
-  background: #6e8efb;
-  color: white;
-  border: none;
-  padding: 10px 20px;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background 0.3s;
-}
+        button {
+            display: block;
+            width: 100%;
+            padding: 12px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 1.2em;
+            cursor: pointer;
+            margin-top: 10px;
+            transition: background-color 0.3s ease;
+        }
 
-button:hover {
-  background: #556cfb;
-}
+        button:hover {
+            background-color: #218838;
+        }
 
-.result-area {
-  margin-top: 20px;
-}
+        #results {
+            margin-top: 20px;
+            text-align: left;
+        }
 
-.result {
-  padding: 10px;
-  border-radius: 5px;
-  margin-top: 10px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
+        .result-item {
+            margin: 5px 0;
+            padding: 10px;
+            border-radius: 8px;
+            background-color: rgba(255, 255, 255, 0.9);
+            border: 1px solid #ddd;
+            color: #000;
+        }
 
-.result.valid {
-  background-color: #d4edda;
-  color: #155724;
-}
+        .result-item.valid {
+            color: green;
+        }
 
-.result.invalid {
-  background-color: #f8d7da;
-  color: #721c24;
-}
+        .result-item.invalid {
+            color: red;
+        }
 
-.summary {
-  margin-top: 20px;
-  font-weight: bold;
-  text-align: center;
-}
+        .result-item.error {
+            color: orange;
+        }
+
+        .plan-info {
+            font-size: 0.9em;
+            color: #555;
+        }
+
+        #summary {
+            margin-top: 20px;
+            font-weight: bold;
+        }
+
+        #loading {
+            display: none;
+            margin-top: 10px;
+        }
+
+        #downloadBtn {
+            display: none;
+            width: 100%;
+            padding: 12px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 1.2em;
+            cursor: pointer;
+            margin-top: 10px;
+            transition: background-color 0.3s ease;
+        }
+
+        #downloadBtn:hover {
+            background-color: #0056b3;
+        }
+
+        #proxyToggleBtn {
+            width: 100%;
+            padding: 12px;
+            background-color: #ffc107;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 1.2em;
+            cursor: pointer;
+            margin-top: 10px;
+            transition: background-color 0.3s ease;
+        }
+
+        #proxyToggleBtn:hover {
+            background-color: #e0a800;
+        }
